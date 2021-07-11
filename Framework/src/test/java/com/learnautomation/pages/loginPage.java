@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class loginPage {
 	
+	// hi boom
 	WebDriver driver;
 	public loginPage(WebDriver driver) {
 		
@@ -20,6 +21,7 @@ public class loginPage {
 	public void LogintoFB(String Username, String Password) throws InterruptedException {
 		
 		Thread.sleep(3000);
+		
 		
 		username.sendKeys(Username);
 		password.sendKeys(Password);
