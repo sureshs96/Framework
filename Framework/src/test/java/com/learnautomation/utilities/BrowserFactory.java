@@ -15,17 +15,17 @@ public class BrowserFactory {
 		if(browsername.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver","C:\\Users\\SURESH\\eclipse-workspace\\Framework\\Drivers\\chromedriver.exe");		
 			driver = new ChromeDriver();
-			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		}
 		else if(browsername.equals("edge")){
 			System.setProperty("webdriver.edge.driver","C:\\Users\\SURESH\\eclipse-workspace\\Framework\\Drivers\\msedgedriver.exe");
 			driver = new EdgeDriver();
-			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		}
 		else if(browsername.equals("ie")){
 			System.setProperty("webdriver.ie.driver","C:\\Users\\SURESH\\eclipse-workspace\\Framework\\Drivers\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
-			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		}
 		else {
 			System.out.println("the browser is not supported");
