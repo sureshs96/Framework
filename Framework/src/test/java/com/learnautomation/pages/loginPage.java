@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class loginPage {
 	
-	// hi boom
+	
 	WebDriver driver;
 	public loginPage(WebDriver driver) {
 		
